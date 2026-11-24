@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PRIVIEW | 가명정보 위험 관리</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+<div class="landing" id="landingView">
+  <main>
+    <section class="landing-hero">
+      <div class="landing-hero-copy landing-reveal">
+        <span class="landing-kicker">가명정보 위험 관리 대시보드</span>
+        <h1>가명정보 위험 평가와<br>재가명처리를 한 흐름으로</h1>
+        <p>활용 목적을 먼저 확인한 뒤 식별 위험, 집계 위험 및 노출 위험을 분석합니다.<br>통합 위험도가 고위험일 경우 재가명처리를 추천합니다.</p>
+        <div class="landing-hero-buttons"><button type="button" class="landing-primary large" data-open-workspace="risk">1. 위험 평가 시작</button><button type="button" class="landing-secondary large" data-open-workspace="repseudonymization">2. 재가명처리 열기</button></div>
+      </div>
+      <div class="dashboard-preview landing-reveal" aria-label="통합 위험도 결과 화면 예시">
+        <div class="dashboard-preview-head"><span>통합 분석 결과</span><b>분석 완료</b></div>
+        <div class="dashboard-preview-summary"><div class="preview-grade"><strong>고위험</strong><small>통합 위험도</small></div><div><b>재가명처리가 필요합니다.</b><p>위험 수준을 낮추기 위해 재가명처리를 권장합니다.</p></div></div>
+        <div class="dashboard-preview-grid"><div><span>목적 적합성</span><b class="preview-low">통과</b></div><div><span>식별 위험</span><b class="preview-mid">중위험</b></div><div><span>집계 위험</span><b class="preview-low">저위험</b></div><div><span>노출 위험</span><b class="preview-high">고위험</b></div></div>
+        <div class="dashboard-preview-next"><span>02</span><div><b>위험 컬럼 재가명처리</b><small>우선 처리 컬럼을 자동으로 연결합니다.</small></div><i>→</i></div>
+      </div>
+    </section>
+
+    <section class="landing-process landing-reveal" aria-label="전체 처리 순서">
+      <div><span>1</span><b>위험 평가</b><small>목적 적합성과 세부 위험 분석</small></div><i>→</i><div><span>결과</span><b>통합 위험도</b><small>고위험이면 재가명처리 추천</small></div><i>→</i><div><span>2</span><b>재가명처리</b><small>추천 기법 적용과 위험도 재평가</small></div>
+    </section>
+
+    <section class="landing-section" id="landingRisk">
+      <div class="landing-section-copy landing-reveal"><span class="landing-section-number">01</span><h2>위험 평가</h2><p>데이터셋의 컬럼을 확인하고 목적 적합성, 식별, 집계, 노출 위험을 평가한 뒤 세 모듈의 위험 등급을 종합합니다.</p><button type="button" class="landing-text-button" data-open-workspace="risk">위험 평가 화면 열기 →</button></div>
+      <div class="landing-analysis-panel landing-reveal"><div class="landing-panel-title"><b>분석 결과 구성</b><span>고위험, 중위험, 저위험</span></div><div class="landing-analysis-rows"><div><span>목적 적합성</span><em>통과 또는 반려</em></div><div><span>식별 위험</span><em>유일성 및 정확 매칭률</em></div><div><span>집계 위험</span><em>민감정보 추론 가능성</em></div><div><span>노출 위험</span><em>내부 및 외부 노출 지표</em></div></div></div>
+    </section>
+
+    <section class="landing-section landing-section-alt" id="landingRepseudo">
+      <div class="landing-before-after landing-reveal"><div><span>처리 전</span><b>1994-03-21</b><small>고유값이 세분화된 날짜</small></div><i>→</i><div><span>처리 후</span><b>1994-03</b><small>연월 단위로 범위 축소</small></div><div class="landing-methods"><span>부분 마스킹</span><span>희소 범주 묶기</span><span>수치 구간화</span><span>날짜 단위 축소</span></div></div>
+      <div class="landing-section-copy landing-reveal"><span class="landing-section-number">02</span><h2>재가명처리</h2><p>고위험 판정에 영향을 준 컬럼을 불러와 처리 방법을 선택합니다. 처리된 파일을 다시 위험 평가하여 위험 수준이 낮아졌는지 확인할 수 있습니다.</p><button type="button" class="landing-text-button" data-open-workspace="repseudonymization">재가명처리 화면 열기 →</button></div>
+    </section>
+  </main>
+</div>
+
+<div class="app-shell hidden" id="appShell">
+  <aside class="sidebar" id="sidebar">
+    <button class="brand landing-return" type="button" aria-label="프로젝트 소개 화면으로 이동">
+      <div class="brand-logo" aria-hidden="true">P</div>
+      <div><strong>PRIVIEW</strong><span>가명정보 위험 분석</span></div>
+    </button>
+
+    <nav class="side-nav" aria-label="주요 메뉴">
+      <button class="nav-item active" data-view="risk"><span class="nav-index">01</span><span>위험 평가</span></button>
+      <button class="nav-item result-nav" data-view="overview" disabled><span class="nav-index">02</span><span>분석 결과</span></button>
+      <button class="nav-item result-nav nav-subitem" data-view="purpose" disabled><span>목적 적합성</span></button>
+      <button class="nav-item result-nav nav-subitem" data-view="identification" disabled><span>식별 위험</span></button>
+      <button class="nav-item result-nav nav-subitem" data-view="aggregation" disabled><span>집계 위험</span></button>
+      <button class="nav-item result-nav nav-subitem" data-view="exposure" disabled><span>노출 위험</span></button>
+      <button class="nav-item" data-view="repseudonymization"><span class="nav-index">03</span><span>재가명처리</span></button>
+      <button class="nav-item" id="comparisonNav" data-view="comparison" disabled><span class="nav-index">04</span><span>처리 전후 비교</span></button>
+    </nav>
+
+    <div class="side-note">
+      <b>처리 단계</b>
+      <p>위험 평가 후 보완이 필요한 데이터는 재가명처리할 수 있습니다.</p>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu" aria-label="메뉴 열기">☰</button>
+      <div class="top-title"><span id="topSectionLabel">1단계</span><b id="topSectionTitle">가명정보 위험 평가</b></div>
+      <div class="run-state" id="runState">분석 전</div>
+    </header>
+
+    <section class="view active" id="homeView" data-view-panel="risk">
+      <div class="page-heading">
+        <div>
+          <h1>데이터셋 통합 위험 분석</h1>
+          <p>목적 적합성을 먼저 확인하고, 통과한 데이터에 한해 식별 위험, 집계 위험 및 노출 위험을 분석합니다.</p>
+        </div>
+      </div>
+
+      <form id="analysisForm" class="analysis-card">
+        <div class="upload-intro">
+          <div>
+            <h2>분석 자료 입력</h2>
+            <p>데이터셋과 활용 계획서를 등록한 뒤 분석 조건을 확인해 주세요.</p>
+          </div>
+          <div class="process-flow" aria-label="분석 처리 순서">
+            <span>데이터 입력</span><i></i><span>목적 적합성</span><i></i><span>세부 위험 분석</span><i></i><span>통합 위험도</span>
+          </div>
+        </div>
+
+        <div class="upload-grid">
+          <label class="upload-box" for="dataFile">
+            <span class="upload-label">데이터셋</span>
+            <strong id="dataFileName">분석할 데이터셋을 선택해 주세요</strong>
+            <small>CSV, XLSX, XLS, TSV, JSON, Parquet</small>
+            <span class="file-button">파일 선택</span>
+            <input id="dataFile" name="data_file" type="file" accept=".csv,.xlsx,.xls,.tsv,.json,.parquet" required>
+          </label>
+          <label class="upload-box" for="planFile">
+            <span class="upload-label">활용 계획서</span>
+            <strong id="planFileName">목적 적합성 판단에 사용할 자료를 선택해 주세요</strong>
+            <small>PDF 파일만 지원</small>
+            <span class="file-button">파일 선택</span>
+            <input id="planFile" name="plan_file" type="file" accept=".pdf" required>
+          </label>
+        </div>
+
+        <div id="inspectInfo" class="dataset-preview hidden"></div>
+        <div class="settings-section">
+          <div class="section-heading">
+            <div><h3>분석 조건</h3><p>각 모듈이 실제 코드에서 요구하는 조건만 설정합니다.</p></div>
+            <button type="button" class="plain-button" id="inspectBtn">데이터셋 컬럼 확인</button>
+          </div>
+          <div class="form-grid">
+            <label class="field"><span>가명정보 처리 목적</span><select name="purpose" required>{% for p in purposes %}<option value="{{p}}">{{p}}</option>{% endfor %}</select><small>목적 외 사용 모듈은 선택 목적과 계획서 내용을 비교해 통과 또는 반려로 판단합니다.</small></label>
+            <label class="field"><span>집계 분석 타깃 컬럼</span><select id="targetCol" name="target_col" required><option value="">먼저 컬럼을 확인해 주세요</option></select><small>집계 위험 분석에서 예측할 민감정보 대상 컬럼입니다.</small></label>
+          </div>
+          <details class="advanced-settings">
+            <summary>고급 분석 설정</summary>
+            <div class="form-grid compact-grid">
+              <label class="field"><span>식별 분석 최대 조합 크기</span><input name="id_max_combo" type="number" value="3" min="1" max="5"></label>
+              <label class="field"><span>집계 분석 조합 크기</span><div class="range-inputs"><input name="agg_min_combo" type="number" value="2" min="2" max="5"><em>부터</em><input name="agg_max_combo" type="number" value="3" min="2" max="5"></div></label>
+            </div>
+          </details>
+        </div>
+
+        <div class="form-footer analysis-submit">
+          <button type="submit" class="primary-button" id="runBtn">전체 분석 실행</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="view hidden" id="overviewView" data-view-panel="overview">
+      <div class="page-heading result-heading">
+        <div><h1>통합 분석 결과</h1><p id="datasetSummary">분석 결과를 불러오는 중입니다.</p></div>
+        <div class="result-actions"><a class="secondary-button disabled" id="reportBtn" href="#" download>적정성 검토서 내려받기</a><button class="secondary-button" id="rerunBtn">새 분석 실행</button></div>
+      </div>
+
+      <section class="summary-panel">
+        <div class="summary-main">
+          <div class="summary-symbol"><span id="integratedGrade">-</span><small>통합 위험도</small></div>
+          <div><h2 id="overallTitle">통합 위험도를 확인해 주세요</h2><p id="overallMessage"></p></div>
+        </div>
+        <div class="summary-facts">
+          <div><span>분석 레코드</span><strong id="summaryRows">-</strong></div>
+          <div><span>분석 컬럼</span><strong id="summaryColumns">-</strong></div>
+          <div><span>목적 적합성</span><strong id="summaryPurpose">-</strong></div>
+        </div>
+      </section>
+
+      <section id="integratedEvidence" class="integrated-evidence hidden"></section>
+
+      <div class="result-card-grid">
+        <button class="result-card purpose-card" data-open-detail="purpose">
+          <div class="result-card-top"><span>목적 적합성</span><i class="arrow">→</i></div>
+          <strong id="purposeDecision">-</strong>
+          <p id="purposeMetric">선택 목적과 계획서의 적합성을 확인합니다.</p>
+          <div class="card-footer"><span id="purposeStatus">분석 대기</span><b>상세 보기</b></div>
+        </button>
+        <button class="result-card" data-open-detail="identification">
+          <div class="result-card-top"><span>식별 위험</span><i class="arrow">→</i></div>
+          <strong id="idGrade">-</strong>
+          <p id="idMetric">CorrectMatch 분석 결과</p>
+          <div class="card-footer"><span id="idStatus">분석 대기</span><b>상세 보기</b></div>
+        </button>
+        <button class="result-card" data-open-detail="aggregation">
+          <div class="result-card-top"><span>집계 위험</span><i class="arrow">→</i></div>
+          <strong id="aggGrade">-</strong>
+          <p id="aggMetric">민감정보 예측 조합 분석 결과</p>
+          <div class="card-footer"><span id="aggStatus">분석 대기</span><b>상세 보기</b></div>
+        </button>
+        <button class="result-card" data-open-detail="exposure">
+          <div class="result-card-top"><span>노출 위험</span><i class="arrow">→</i></div>
+          <strong id="exposureGrade">-</strong>
+          <p id="exposureMetric">민감정보 탐지와 내외부 노출 지표 결과</p>
+          <div class="card-footer"><span id="exposureStatus">분석 대기</span><b>상세 보기</b></div>
+        </button>
+      </div>
+
+      <section class="overview-table-section">
+        <div class="section-heading"><div><h3>모듈별 핵심 결과</h3><p>세 분석 결과를 한 화면에서 비교하고 상세 화면으로 이동할 수 있습니다.</p></div></div>
+        <div class="overview-table">
+          <div class="overview-row overview-head"><span>분석 모듈</span><span>판정 방식</span><span>현재 결과</span><span>주요 근거</span><span></span></div>
+          <button class="overview-row" data-open-detail="purpose"><b>목적 적합성</b><span>통과 또는 반려</span><strong id="purposeOverviewGrade">-</strong><span id="purposeOverviewReason">분석 결과 없음</span><i>상세 보기</i></button>
+          <button class="overview-row" data-open-detail="identification"><b>식별 위험</b><span>고위험, 중위험, 저위험</span><strong id="idOverviewGrade">-</strong><span id="idOverviewReason">분석 결과 없음</span><i>상세 보기</i></button>
+          <button class="overview-row" data-open-detail="aggregation"><b>집계 위험</b><span>고위험, 중위험, 저위험</span><strong id="aggOverviewGrade">-</strong><span id="aggOverviewReason">분석 결과 없음</span><i>상세 보기</i></button>
+          <button class="overview-row" data-open-detail="exposure"><b>노출 위험</b><span>고위험, 중위험, 저위험</span><strong id="exposureOverviewGrade">-</strong><span id="exposureOverviewReason">분석 결과 없음</span><i>상세 보기</i></button>
+        </div>
+      </section>
+      <div class="repseudo-next hidden" id="repseudoNext"><div class="next-step-number">02</div><div><b>통합 위험도가 고위험입니다. 재가명처리로 위험을 낮춰 주세요.</b><p>식별 위험, 집계 위험 및 노출 위험에서 확인된 우선 처리 컬럼을 자동으로 불러옵니다.</p></div><button type="button" class="primary-button" id="resultToRepseudo">위험 컬럼 재가명처리</button></div>
+    </section>
+
+    <section class="view hidden" id="repseudonymizationView" data-view-panel="repseudonymization">
+      <div class="page-heading"><div><h1>재가명처리</h1><p>위험 평가 결과를 불러오거나 별도 데이터셋을 등록한 뒤 컬럼별 처리 방법을 선택합니다.</p></div></div>
+      <div class="repseudo-context"><div><span>01</span><p><small>위험 평가</small><b id="repseudoRiskGrade">결과 확인 전</b></p></div><i>→</i><div class="active"><span>02</span><p><small>재가명처리</small><b>위험 컬럼 보완</b></p></div><i>→</i><div><span>03</span><p><small>후속 확인</small><b>위험도 재평가</b></p></div></div>
+      <div class="repseudo-card">
+        <div class="repseudo-source">
+          <div class="section-heading"><div><h3>처리 자료</h3><p>두 가지 방법 중 하나를 선택해 주세요.</p></div></div>
+          <div class="source-grid">
+            <button type="button" class="source-option" id="loadRiskResult"><span>1단계 결과 연결</span><b>고위험 데이터와 우선 처리 컬럼 불러오기</b><small id="riskSourceStatus">완료된 위험 평가 결과가 있으면 바로 연결됩니다.</small></button>
+            <label class="source-option" for="reDataFile"><span>별도 데이터셋</span><b id="reDataFileName">재가명처리할 파일 선택</b><small>CSV, XLSX, XLS, TSV, JSON, Parquet</small><input id="reDataFile" type="file" accept=".csv,.xlsx,.xls,.tsv,.json,.parquet"></label>
+          </div>
+        </div>
+        <div class="repseudo-settings hidden" id="repseudoSettings">
+          <div class="section-heading"><div><h3>컬럼별 처리 방법</h3><p id="repseudoDatasetInfo"></p></div><button type="button" class="plain-button" id="selectRecommended">추천 컬럼만 선택</button></div>
+          <div class="strategy-table"><div class="strategy-head"><span>선택</span><span>컬럼</span><span>자료형 및 고유값</span><span>처리 방법</span><span>설정값</span></div><div id="strategyRows"></div></div>
+          <div class="form-footer"><p><b>처리 안내</b> 원본 파일은 변경하지 않으며 결과는 새로운 CSV 파일로 저장합니다.</p><div class="result-actions"><label class="field target-level-field"><span>자동 처리 목표 등급</span><select id="targetLevel"><option value="L" selected>저위험까지 (최대 감소)</option><option value="M">중위험까지 (최소 정보손실)</option></select></label><button type="button" class="primary-button" id="runRepseudo">재가명처리 실행</button></div></div>
+        </div>
+        <div class="repseudo-result hidden" id="repseudoResult"></div>
+      </div>
+    </section>
+
+    <section class="view hidden" id="comparisonView" data-view-panel="comparison">
+      <div class="page-heading"><div><h1>재가명처리 전후 위험도 비교</h1><p>같은 분석 기준으로 1차 데이터와 재가명처리본을 비교한 결과입니다.</p></div></div>
+      <div class="repseudo-context"><div><span>01</span><p><small>위험 평가</small><b>처리 전</b></p></div><i>→</i><div><span>02</span><p><small>재가명처리</small><b>위험 컬럼 보완</b></p></div><i>→</i><div class="active"><span>03</span><p><small>후속 확인</small><b>위험도 재평가</b></p></div></div>
+      <div id="comparisonContent" class="detail-content empty">재가명처리 후 위험도 재평가를 실행해 주세요.</div>
+    </section>
+
+    <section class="view hidden detail-view" id="identificationView" data-view-panel="identification">
+      <div class="detail-header"><div><h1>식별 위험 상세 분석</h1><p>유일성, 정확 매칭률과 속성 및 조합별 위험 등급을 확인합니다.</p></div></div>
+      <div id="idContent" class="detail-content empty">분석 결과가 없습니다.</div>
+    </section>
+
+    <section class="view hidden detail-view" id="aggregationView" data-view-panel="aggregation">
+      <div class="detail-header"><div><h1>집계 위험 상세 분석</h1><p>특성 조합이 민감정보 타깃을 얼마나 예측하는지와 조합별 위험 등급을 확인합니다.</p></div></div>
+      <div id="aggContent" class="detail-content empty">분석 결과가 없습니다.</div>
+    </section>
+
+    <section class="view hidden detail-view" id="exposureView" data-view-panel="exposure">
+      <div class="detail-header"><div><h1>노출 위험 상세 분석</h1><p>민감정보 탐지 결과와 속성별 내부 및 외부 노출 지표를 확인합니다.</p></div></div>
+      <div id="exposureContent" class="detail-content empty">분석 결과가 없습니다.</div>
+    </section>
+
+    <section class="view hidden detail-view" id="purposeView" data-view-panel="purpose">
+      <div class="detail-header"><div><h1>목적 적합성 상세 판정</h1><p>선택 목적과 활용 계획서가 기준에 맞는지 통과 또는 반려로 판단합니다.</p></div></div>
+      <div id="purposeContent" class="detail-content empty">분석 결과가 없습니다.</div>
+    </section>
+  </main>
+</div>
+
+<div class="loading hidden" id="loading"><div class="loading-card"><div class="spinner"></div><b>목적 적합성을 먼저 확인하고 있습니다</b><p>통과한 경우 식별 위험, 집계 위험 및 노출 위험을 분석합니다.</p></div></div>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
