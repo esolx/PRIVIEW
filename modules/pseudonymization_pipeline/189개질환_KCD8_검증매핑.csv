@@ -1,0 +1,190 @@
+﻿질병_한글명(원래표기),KCD-8_소분류코드,소분류_한글명(KCD-8공식),소분류_영문명(ICD-10),대분류_장번호,대분류_한글명,대분류_영문명
+장티푸스,A01,장티푸스및파라티푸스,Typhoid and paratyphoid fevers,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+세균성 이질,A03,시겔라증,Shigellosis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+살모넬라 감염,A02,기타살모넬라감염,Other salmonella infections,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+콜레라,A00,콜레라,Cholera,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+폐결핵,A15,"호흡기결핵, 세균학적·조직학적으로확인된경우","Respiratory tuberculosis, bacteriologically and histologically confirmed",I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+결핵성 늑막염,A16,"호흡기결핵, 세균학적·조직학적확인없이진단된경우","Respiratory tuberculosis, not confirmed bacteriologically or histologically",I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+장결핵,A18,기타기관의결핵,Tuberculosis of other organs,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+파상풍,A35,기타파상풍,Other tetanus,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+성홍열,A38,성홍열,Scarlet fever,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+패혈증,A41,기타패혈증,Other sepsis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+MRSA 감염,A49,상세불명부위의세균감염(MRSA등포함),Bacterial infection of unspecified site,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+렙토스피라증,A27,렙토스피라병,Leptospirosis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+사람면역결핍바이러스병(HIV),B20,사람면역결핍바이러스병[HIV병],Human immunodeficiency virus [HIV] disease,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+후천성면역결핍증후군(AIDS),B24,상세불명의사람면역결핍바이러스병,Unspecified human immunodeficiency virus disease,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+A형간염,B15,급성A형간염,Acute hepatitis A,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+B형간염,B16,급성B형간염,Acute hepatitis B,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+C형간염,B18,만성바이러스간염,Chronic viral hepatitis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+인플루엔자(독감),J11,바이러스가확인되지않은인플루엔자,"Influenza, virus not identified",X,호흡계통의 질환,Diseases of the respiratory system
+코로나바이러스감염증-19(COVID-19),U07,특수목적코드(코로나바이러스감염증-19등),Emergency use codes (incl. COVID-19),XXII,특수목적 코드,Codes for special purposes
+홍역,B05,홍역,Measles,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+수두,B01,수두,Varicella [chickenpox],I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+풍진,B06,풍진[독일홍역],Rubella [German measles],I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+유행성이하선염(볼거리),B26,볼거리[유행성이하선염],Mumps,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+대상포진,B02,대상포진[띠헤르페스],Zoster [herpes zoster],I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+단순포진,B00,단순헤르페스바이러스감염,Herpesviral [herpes simplex] infections,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+말라리아,B54,상세불명의말라리아,Unspecified malaria,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+쯔쯔가무시병,A75,발진티푸스(쯔쯔가무시병포함),Typhus fever (incl. scrub typhus),I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+칸디다증,B37,칸디다증,Candidiasis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+무좀(백선증),B35,백선증,Dermatophytosis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+매독,A53,상세불명의매독,Other and unspecified syphilis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+임질,A54,임균감염[임질],Gonococcal infection,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+클라미디아 감염,A56,기타성행위로전파되는클라미디아질환,Other sexually transmitted chlamydial diseases,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+위암,C16,위의악성신생물,Malignant neoplasm of stomach,II,신생물,Neoplasms
+대장암,C18,결장의악성신생물,Malignant neoplasm of colon,II,신생물,Neoplasms
+간암,C22,간및간내담관의악성신생물,Malignant neoplasm of liver and intrahepatic bile ducts,II,신생물,Neoplasms
+식도암,C15,식도의악성신생물,Malignant neoplasm of oesophagus,II,신생물,Neoplasms
+췌장암,C25,췌장의악성신생물,Malignant neoplasm of pancreas,II,신생물,Neoplasms
+담낭암,C23,담낭의악성신생물,Malignant neoplasm of gallbladder,II,신생물,Neoplasms
+폐암,C34,기관지및폐의악성신생물,Malignant neoplasm of bronchus and lung,II,신생물,Neoplasms
+후두암,C32,후두의악성신생물,Malignant neoplasm of larynx,II,신생물,Neoplasms
+기관지암,C34,기관지및폐의악성신생물,Malignant neoplasm of bronchus and lung,II,신생물,Neoplasms
+유방암,C50,유방의악성신생물,Malignant neoplasm of breast,II,신생물,Neoplasms
+자궁경부암,C53,자궁경부의악성신생물,Malignant neoplasm of cervix uteri,II,신생물,Neoplasms
+자궁내막암,C54,자궁체부의악성신생물,Malignant neoplasm of corpus uteri,II,신생물,Neoplasms
+난소암,C56,난소의악성신생물,Malignant neoplasm of ovary,II,신생물,Neoplasms
+전립선암,C61,전립선의악성신생물,Malignant neoplasm of prostate,II,신생물,Neoplasms
+고환암,C62,고환의악성신생물,Malignant neoplasm of testis,II,신생물,Neoplasms
+방광암,C67,방광의악성신생물,Malignant neoplasm of bladder,II,신생물,Neoplasms
+신장암,C64,신우를제외한신장의악성신생물,"Malignant neoplasm of kidney, except renal pelvis",II,신생물,Neoplasms
+갑상선암,C73,갑상선의악성신생물,Malignant neoplasm of thyroid gland,II,신생물,Neoplasms
+뇌종양(악성),C71,뇌의악성신생물,Malignant neoplasm of brain,II,신생물,Neoplasms
+피부암(흑색종),C43,피부의악성흑색종,Malignant melanoma of skin,II,신생물,Neoplasms
+골육종,C41,기타및상세불명부위의골및관절연골의악성신생물,Malignant neoplasm of bone and articular cartilage of other/unspecified sites,II,신생물,Neoplasms
+백혈병,C95,상세불명세포유형의백혈병,"Leukaemia, unspecified",II,신생물,Neoplasms
+림프종,C85,기타및상세불명형의비호지킨림프종,Other and unspecified types of non-Hodgkin lymphoma,II,신생물,Neoplasms
+다발성골수종,C90,다발골수종및악성형질세포신생물,Multiple myeloma and malignant plasma cell neoplasms,II,신생물,Neoplasms
+자궁근종,D25,자궁의평활근종,Leiomyoma of uterus,II,신생물,Neoplasms
+대장용종(양성),K63,대장의기타명시된질환(용종등),Other specified diseases of intestine,XI,소화계통의 질환,Diseases of the digestive system
+지방종,D17,양성지방종성신생물,Benign lipomatous neoplasm,II,신생물,Neoplasms
+갑상선결절(양성),D34,갑상선의양성신생물,Benign neoplasm of thyroid gland,II,신생물,Neoplasms
+제1형 당뇨병,E10,1형당뇨병,Type 1 diabetes mellitus,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+제2형 당뇨병,E11,2형당뇨병,Type 2 diabetes mellitus,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+임신성 당뇨병,O24,임신중당뇨병,Diabetes mellitus in pregnancy,XV,"임신, 출산 및 산후기","Pregnancy, childbirth and the puerperium"
+고지혈증(이상지질혈증),E78,지단백대사장애및기타지질혈증,Disorders of lipoprotein metabolism and other lipidaemias,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+비만,E66,비만,Obesity,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+통풍,M10,통풍,Gout,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+갑상선기능항진증,E05,갑상선중독증[갑상선기능항진증],Thyrotoxicosis [hyperthyroidism],IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+갑상선기능저하증,E03,기타갑상선기능저하증,Other hypothyroidism,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+갑상선염,E06,갑상선염,Thyroiditis,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+골다공증,M81,병적골절이없는골다공증,Osteoporosis without pathological fracture,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+영양실조,E46,상세불명의단백질-에너지영양실조,Unspecified protein-energy malnutrition,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+비타민D결핍,E55,비타민D결핍,Vitamin D deficiency,IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+우울증(주요우울장애),F32,우울에피소드,Depressive episode,V,정신 및 행동 장애,Mental and behavioural disorders
+양극성장애(조울증),F31,양극성정동장애,Bipolar affective disorder,V,정신 및 행동 장애,Mental and behavioural disorders
+불안장애,F41,기타불안장애,Other anxiety disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+공황장애,F41,기타불안장애(공황장애포함),Other anxiety disorders (incl. panic disorder),V,정신 및 행동 장애,Mental and behavioural disorders
+강박장애,F42,강박장애,Obsessive-compulsive disorder,V,정신 및 행동 장애,Mental and behavioural disorders
+외상후스트레스장애(PTSD),F43,심한스트레스에대한반응및적응장애,"Reaction to severe stress, and adjustment disorders",V,정신 및 행동 장애,Mental and behavioural disorders
+조현병,F20,조현병,Schizophrenia,V,정신 및 행동 장애,Mental and behavioural disorders
+조현정동장애,F25,조현정동장애,Schizoaffective disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+알코올사용장애,F10,알콜사용에의한정신및행동장애,Mental and behavioural disorders due to use of alcohol,V,정신 및 행동 장애,Mental and behavioural disorders
+니코틴의존,F17,담배사용에의한정신및행동장애,Mental and behavioural disorders due to use of tobacco,V,정신 및 행동 장애,Mental and behavioural disorders
+약물사용장애,F19,기타정신활성물질사용에의한정신및행동장애,Mental and behavioural disorders due to multiple drug use,V,정신 및 행동 장애,Mental and behavioural disorders
+주의력결핍과잉행동장애(ADHD),F90,운동과다장애[ADHD],Hyperkinetic disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+자폐스펙트럼장애,F84,전반발달장애,Pervasive developmental disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+지적장애,F70,경도정신지체,Mild mental retardation,V,정신 및 행동 장애,Mental and behavioural disorders
+불면증,F51,비기질성수면장애(불면증포함),Nonorganic sleep disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+섭식장애(신경성식욕부진증 등),F50,식사장애,Eating disorders,V,정신 및 행동 장애,Mental and behavioural disorders
+파킨슨병,G20,파킨슨병,Parkinson's disease,VI,신경계통의 질환,Diseases of the nervous system
+알츠하이머병(치매),F00,알츠하이머병에서의치매,Dementia in Alzheimer's disease,V,정신 및 행동 장애,Mental and behavioural disorders
+혈관성 치매,F01,혈관성치매,Vascular dementia,V,정신 및 행동 장애,Mental and behavioural disorders
+뇌전증(간질),G40,뇌전증,Epilepsy,VI,신경계통의 질환,Diseases of the nervous system
+편두통,G43,편두통,Migraine,VI,신경계통의 질환,Diseases of the nervous system
+다발성경화증,G35,다발경화증,Multiple sclerosis,VI,신경계통의 질환,Diseases of the nervous system
+좌골신경통,M54,등통증(좌골신경통은4단위M54.3),Dorsalgia (sciatica at 4-char level M54.3),XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+말초신경병증,G62,기타다발신경병증,Other polyneuropathies,VI,신경계통의 질환,Diseases of the nervous system
+삼차신경통,G50,삼차신경장애,Trigeminal nerve disorders,VI,신경계통의 질환,Diseases of the nervous system
+손목터널증후군,G56,팔의단일신경병증(손목터널증후군포함),Mononeuropathies of upper limb (incl. carpal tunnel syndrome),VI,신경계통의 질환,Diseases of the nervous system
+백내장,H25,노년백내장,Senile cataract,VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+녹내장,H40,녹내장,Glaucoma,VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+황반변성,H35,기타망막장애(황반변성포함),Other retinal disorders (incl. macular degeneration),VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+결막염,H10,결막염,Conjunctivitis,VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+근시,H52,굴절및조절의장애(근시포함),Disorders of refraction and accommodation (incl. myopia),VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+당뇨망막병증,H36,달리분류된질환에서의망막장애,Retinal disorders in diseases classified elsewhere,VII,눈 및 눈 부속기의 질환,Diseases of the eye and adnexa
+중이염,H66,화농성및상세불명의중이염,Suppurative and unspecified otitis media,VIII,귀 및 유돌의 질환,Diseases of the ear and mastoid process
+난청,H91,기타청력소실,Other hearing loss,VIII,귀 및 유돌의 질환,Diseases of the ear and mastoid process
+이명,H93,달리분류되지않은귀의기타장애(이명포함),"Other disorders of ear, NEC (incl. tinnitus)",VIII,귀 및 유돌의 질환,Diseases of the ear and mastoid process
+메니에르병,H81,전정기능의장애(메니에르병포함),Disorders of vestibular function (incl. Meniere disease),VIII,귀 및 유돌의 질환,Diseases of the ear and mastoid process
+본태성(원발성) 고혈압,I10,본태성(원발성)고혈압,Essential (primary) hypertension,IX,순환계통의 질환,Diseases of the circulatory system
+이차성 고혈압,I15,이차성고혈압,Secondary hypertension,IX,순환계통의 질환,Diseases of the circulatory system
+협심증,I20,협심증,Angina pectoris,IX,순환계통의 질환,Diseases of the circulatory system
+급성심근경색,I21,급성심근경색증,Acute myocardial infarction,IX,순환계통의 질환,Diseases of the circulatory system
+허혈성심장질환,I25,만성허혈심장병,Chronic ischaemic heart disease,IX,순환계통의 질환,Diseases of the circulatory system
+심부전,I50,심부전,Heart failure,IX,순환계통의 질환,Diseases of the circulatory system
+부정맥,I49,기타심장부정맥,Other cardiac arrhythmias,IX,순환계통의 질환,Diseases of the circulatory system
+심방세동,I48,심방세동및조동,Atrial fibrillation and flutter,IX,순환계통의 질환,Diseases of the circulatory system
+뇌졸중(뇌경색),I63,뇌경색증,Cerebral infarction,IX,순환계통의 질환,Diseases of the circulatory system
+뇌출혈,I61,뇌내출혈,Intracerebral haemorrhage,IX,순환계통의 질환,Diseases of the circulatory system
+일과성허혈발작(TIA),G45,일과성뇌허혈발작및관련증후군,Transient cerebral ischaemic attacks and related syndromes,VI,신경계통의 질환,Diseases of the nervous system
+정맥류,I83,하지의정맥류,Varicose veins of lower extremities,IX,순환계통의 질환,Diseases of the circulatory system
+치질(치핵),I84,치핵,Haemorrhoids,IX,순환계통의 질환,Diseases of the circulatory system
+심부정맥혈전증,I80,정맥염및혈전정맥염,Phlebitis and thrombophlebitis,IX,순환계통의 질환,Diseases of the circulatory system
+동맥경화증,I70,죽상경화증,Atherosclerosis,IX,순환계통의 질환,Diseases of the circulatory system
+감기(급성비인두염),J00,급성비인두염[감기],Acute nasopharyngitis [common cold],X,호흡계통의 질환,Diseases of the respiratory system
+급성기관지염,J20,급성기관지염,Acute bronchitis,X,호흡계통의 질환,Diseases of the respiratory system
+급성인두염,J02,급성인두염,Acute pharyngitis,X,호흡계통의 질환,Diseases of the respiratory system
+독감성폐렴,J10,확인된계절인플루엔자바이러스에의한인플루엔자,Influenza due to identified seasonal influenza virus,X,호흡계통의 질환,Diseases of the respiratory system
+천식,J45,천식,Asthma,X,호흡계통의 질환,Diseases of the respiratory system
+만성폐쇄성폐질환(COPD),J44,기타만성폐쇄성폐질환,Other chronic obstructive pulmonary disease,X,호흡계통의 질환,Diseases of the respiratory system
+만성기관지염,J41,단순및점액화농성만성기관지염,Simple and mucopurulent chronic bronchitis,X,호흡계통의 질환,Diseases of the respiratory system
+폐렴,J18,상세불명병원체의폐렴,"Pneumonia, organism unspecified",X,호흡계통의 질환,Diseases of the respiratory system
+폐결핵후유증,B90,결핵의후유증,Sequelae of tuberculosis,I,특정 감염성 및 기생충성 질환,Certain infectious and parasitic diseases
+기흉,J93,기흉,Pneumothorax,X,호흡계통의 질환,Diseases of the respiratory system
+수면무호흡증,G47,수면장애(수면무호흡포함),Sleep disorders (incl. sleep apnoea),VI,신경계통의 질환,Diseases of the nervous system
+알레르기비염,J30,혈관운동성및알레르기비염,Vasomotor and allergic rhinitis,X,호흡계통의 질환,Diseases of the respiratory system
+부비동염(축농증),J32,만성부비동염,Chronic sinusitis,X,호흡계통의 질환,Diseases of the respiratory system
+위염,K29,위염및십이지장염,Gastritis and duodenitis,XI,소화계통의 질환,Diseases of the digestive system
+위궤양,K25,위궤양,Gastric ulcer,XI,소화계통의 질환,Diseases of the digestive system
+십이지장궤양,K26,십이지장궤양,Duodenal ulcer,XI,소화계통의 질환,Diseases of the digestive system
+위식도역류질환(GERD),K21,위-식도역류병,Gastro-oesophageal reflux disease,XI,소화계통의 질환,Diseases of the digestive system
+과민성대장증후군,K58,과민대장증후군,Irritable bowel syndrome,XI,소화계통의 질환,Diseases of the digestive system
+크론병,K50,크론병[국한성장염],Crohn's disease [regional enteritis],XI,소화계통의 질환,Diseases of the digestive system
+궤양성대장염,K51,궤양성대장염,Ulcerative colitis,XI,소화계통의 질환,Diseases of the digestive system
+장폐색,K56,탈장을동반하지않는마비장폐색증및장폐색증,Paralytic ileus and intestinal obstruction without hernia,XI,소화계통의 질환,Diseases of the digestive system
+맹장염(충수염),K35,급성충수염,Acute appendicitis,XI,소화계통의 질환,Diseases of the digestive system
+지방간,K76,기타명시된간질환(지방간포함),Other specified diseases of liver (incl. fatty liver),XI,소화계통의 질환,Diseases of the digestive system
+간경변증,K74,간의섬유증및경변증,Fibrosis and cirrhosis of liver,XI,소화계통의 질환,Diseases of the digestive system
+담석증,K80,담석증,Cholelithiasis,XI,소화계통의 질환,Diseases of the digestive system
+췌장염,K85,급성췌장염,Acute pancreatitis,XI,소화계통의 질환,Diseases of the digestive system
+치주질환(잇몸병),K05,치은염및치주질환,Gingivitis and periodontal diseases,XI,소화계통의 질환,Diseases of the digestive system
+충치(치아우식증),K02,치아우식,Dental caries,XI,소화계통의 질환,Diseases of the digestive system
+아토피피부염,L20,아토피피부염,Atopic dermatitis,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+접촉피부염,L23,알레르기접촉피부염,Allergic contact dermatitis,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+여드름,L70,여드름,Acne,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+건선,L40,건선,Psoriasis,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+두드러기(담마진),L50,두드러기,Urticaria,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+탈모증,L65,기타비반흔성모발손실,Other nonscarring hair loss,XII,피부 및 피하조직의 질환,Diseases of the skin and subcutaneous tissue
+골관절염(퇴행성관절염),M17,무릎관절증(부위별로M15-M19),Gonarthrosis [knee OA] (site-specific M15-M19),XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+류마티스관절염,M06,기타류마티스관절염,Other rheumatoid arthritis,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+추간판탈출증(허리디스크),M51,기타추간판장애,Other intervertebral disc disorders,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+척추관협착증,M48,기타척추병증(척추관협착증포함),Other spondylopathies (incl. spinal stenosis),XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+요통(허리통증),M54,등통증,Dorsalgia,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+척추측만증,M41,척주측만증,Scoliosis,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+오십견(유착성관절낭염),M75,어깨병변(유착성관절낭염포함),Shoulder lesions (incl. adhesive capsulitis),XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+회전근개파열,M75,어깨병변(회전근개파열포함),Shoulder lesions (incl. rotator cuff tear),XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+건염(힘줄염),M77,기타골부착부병증,Other enthesopathies,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+루푸스(전신홍반루푸스),M32,전신홍반루푸스,Systemic lupus erythematosus,XIII,근골격계통 및 결합조직의 질환,Diseases of the musculoskeletal system and connective tissue
+만성신부전(만성콩팥병),N18,만성신장병,Chronic kidney disease,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+급성신부전,N17,급성신부전,Acute renal failure,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+신장결석(요로결석),N20,신결석및요관결석,Calculus of kidney and ureter,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+방광염,N30,방광염,Cystitis,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+요로감염,N39,달리분류되지않은비뇨계통의기타장애(요로감염포함),"Other disorders of urinary system, NEC (incl. UTI)",XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+전립선비대증,N40,전립선증식증,Hyperplasia of prostate,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+자궁내막증,N80,자궁내막증,Endometriosis,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+다낭성난소증후군(PCOS),E28,난소기능이상(다낭성난소증후군포함),Ovarian dysfunction (incl. PCOS),IV,"내분비, 영양 및 대사 질환","Endocrine, nutritional and metabolic diseases"
+불임증,N97,여성불임증,Female infertility,XIV,비뇨생식계통의 질환,Diseases of the genitourinary system
+임신중독증(전자간증),O14,전자간증[전자간],Pre-eclampsia,XV,"임신, 출산 및 산후기","Pregnancy, childbirth and the puerperium"
+유산(자연유산),O03,자연유산,Spontaneous abortion,XV,"임신, 출산 및 산후기","Pregnancy, childbirth and the puerperium"
+조산,O60,조기진통및분만,Preterm labour and delivery,XV,"임신, 출산 및 산후기","Pregnancy, childbirth and the puerperium"
+산후우울증,F53,달리분류되지않은산후기와관련된정신및행동장애,"Mental and behavioural disorders associated with the puerperium, NEC",V,정신 및 행동 장애,Mental and behavioural disorders
+선천성심장질환,Q24,심장의기타선천기형,Other congenital malformations of heart,XVII,"선천기형, 변형 및 염색체이상","Congenital malformations, deformations and chromosomal abnormalities"
+다운증후군,Q90,다운증후군,Down syndrome,XVII,"선천기형, 변형 및 염색체이상","Congenital malformations, deformations and chromosomal abnormalities"
+구순구개열(입술입천장갈림증),Q37,구순열을동반한구개열,Cleft palate with cleft lip,XVII,"선천기형, 변형 및 염색체이상","Congenital malformations, deformations and chromosomal abnormalities"
+골절,T14,상세불명신체부위의손상(골절등포함),Injury of unspecified body region,XIX,"손상, 중독 및 외인에 의한 특정 기타 결과","Injury, poisoning and certain other consequences of external causes"
+염좌 및 긴장(삠),T14,상세불명신체부위의손상(염좌·긴장포함),Injury of unspecified body region (incl. sprain/strain),XIX,"손상, 중독 및 외인에 의한 특정 기타 결과","Injury, poisoning and certain other consequences of external causes"
+화상,T30,신체부위상세불명의화상및부식,"Burn and corrosion of body region, unspecified",XIX,"손상, 중독 및 외인에 의한 특정 기타 결과","Injury, poisoning and certain other consequences of external causes"
+뇌진탕,S06,두개내손상(뇌진탕포함),Intracranial injury (incl. concussion),XIX,"손상, 중독 및 외인에 의한 특정 기타 결과","Injury, poisoning and certain other consequences of external causes"
+약물중독,T50,"이뇨제및기타상세불명의약물,약제및생물학적물질에의한중독",Poisoning by diuretics and other unspecified drugs,XIX,"손상, 중독 및 외인에 의한 특정 기타 결과","Injury, poisoning and certain other consequences of external causes"
+교통사고 손상,V89,상세불명차량형태의사고,"Motor- or nonmotor-vehicle accident, type of vehicle unspecified",XX,질병이환 및 사망의 외인,External causes of morbidity and mortality

@@ -1,0 +1,377 @@
+{
+ "_about": "법정 민감 카테고리 컬럼명 어휘(카테고리 기본 키워드에 더해짐). 단어 단위로 매칭. ambiguous={단어:[맥락 단어]} 는 맥락 단어가 같이 있을 때만 '강한' 이름 근거. negative_context={단어:[반대 맥락 단어]} 는 그 단어가 같이 있으면 다른 뜻으로 보고 '약한' 근거로 낮춘다 (race_finish_time 의 race=경주).",
+ "HEALTH": {
+  "terms": [
+   "dx",
+   "diag",
+   "diagnoses",
+   "icd",
+   "kcd",
+   "hx",
+   "rx",
+   "sx",
+   "hiv",
+   "hbv",
+   "hcv",
+   "std",
+   "sti",
+   "covid",
+   "illness",
+   "disorder",
+   "comorbidity",
+   "comorbidities",
+   "psychiatric",
+   "phq",
+   "phq9",
+   "gad7",
+   "medication",
+   "prescription",
+   "allergy",
+   "allergies",
+   "surgery",
+   "hospitalization",
+   "hospitalized",
+   "vaccine",
+   "vaccination",
+   "symptom",
+   "symptoms",
+   "병명",
+   "상병",
+   "병력",
+   "투약",
+   "질환",
+   "입원",
+   "수술",
+   "정신",
+   "우울",
+   "감염",
+   "증상",
+   "진료"
+  ],
+  "ambiguous": {
+   "tx": [
+    "patient",
+    "medical",
+    "clinical",
+    "drug",
+    "therapy"
+   ],
+   "admission": [
+    "hospital",
+    "patient",
+    "icu",
+    "er",
+    "inpatient"
+   ],
+   "mental": [
+    "health",
+    "illness",
+    "disorder"
+   ]
+  }
+ },
+ "CRIMINAL_RECORD": {
+  "terms": [
+   "arrest",
+   "arrests",
+   "offense",
+   "offence",
+   "offenses",
+   "conviction",
+   "convictions",
+   "convicted",
+   "crime",
+   "crimes",
+   "criminal",
+   "incarceration",
+   "inmate",
+   "prison",
+   "jail",
+   "parole",
+   "recidivism",
+   "recid",
+   "felony",
+   "misdemeanor",
+   "booking",
+   "warrant",
+   "전과",
+   "범죄",
+   "체포",
+   "기소",
+   "구속",
+   "수감",
+   "가석방",
+   "형사",
+   "범행",
+   "죄명"
+  ],
+  "ambiguous": {
+   "charge": [
+    "degree",
+    "crime",
+    "criminal",
+    "felony",
+    "misdemeanor",
+    "offense",
+    "offence",
+    "desc",
+    "description",
+    "arrest",
+    "c"
+   ],
+   "probation": [
+    "criminal",
+    "offender",
+    "officer",
+    "violation",
+    "court"
+   ],
+   "violation": [
+    "probation",
+    "parole",
+    "criminal",
+    "law"
+   ]
+  },
+  "negative_context": {
+   "crime": [
+    "rate",
+    "rates",
+    "index",
+    "stats",
+    "statistics",
+    "region",
+    "regional",
+    "area",
+    "district",
+    "count_region"
+   ],
+   "criminal": [
+    "rate",
+    "rates",
+    "index",
+    "stats",
+    "statistics"
+   ]
+  }
+ },
+ "POLITICAL_OPINION": {
+  "terms": [
+   "ideology",
+   "ideological",
+   "partisan",
+   "partisanship",
+   "voter",
+   "정치",
+   "정당",
+   "이념",
+   "지지정당"
+  ],
+  "ambiguous": {
+   "pol": [
+    "lean",
+    "party",
+    "view",
+    "views",
+    "ideology",
+    "orientation",
+    "pref",
+    "preference"
+   ],
+   "lean": [
+    "pol",
+    "political",
+    "politics",
+    "ideology",
+    "party"
+   ],
+   "성향": [
+    "정치",
+    "이념",
+    "지지",
+    "정당"
+   ]
+  }
+ },
+ "IDEOLOGY_BELIEF": {
+  "terms": [
+   "religion",
+   "religious",
+   "faith",
+   "denomination",
+   "denominational",
+   "worship",
+   "spiritual",
+   "종교",
+   "신앙",
+   "교파",
+   "종파"
+  ],
+  "ambiguous": {
+   "belief": [
+    "religious",
+    "religion",
+    "faith",
+    "spiritual",
+    "political"
+   ]
+  }
+ },
+ "RACE_ETHNICITY": {
+  "terms": [
+   "ethnicity",
+   "ethnic",
+   "racial",
+   "ancestry",
+   "인종",
+   "민족"
+  ],
+  "ambiguous": {
+   "origin": [
+    "ethnic",
+    "racial",
+    "national",
+    "race"
+   ],
+   "heritage": [
+    "ethnic",
+    "cultural",
+    "racial"
+   ],
+   "출신": [
+    "민족",
+    "인종",
+    "국가"
+   ]
+  },
+  "negative_context": {
+   "race": [
+    "time",
+    "finish",
+    "lap",
+    "laps",
+    "track",
+    "horse",
+    "car",
+    "bike",
+    "course",
+    "result",
+    "results",
+    "entry",
+    "start",
+    "pace",
+    "day",
+    "distance",
+    "marathon",
+    "event"
+   ]
+  }
+ },
+ "SEX_LIFE": {
+  "terms": [
+   "sexuality",
+   "lgbt",
+   "lgbtq",
+   "성정체성",
+   "성소수자",
+   "성생활"
+  ],
+  "ambiguous": {
+   "gay": [
+    "status",
+    "yn",
+    "flag"
+   ]
+  }
+ },
+ "UNION_PARTY": {
+  "terms": [
+   "labor_union",
+   "labour_union",
+   "trade_union",
+   "노조",
+   "노동조합",
+   "조합원"
+  ],
+  "ambiguous": {}
+ },
+ "GENETIC": {
+  "terms": [
+   "gene",
+   "genetic",
+   "genotype",
+   "genome",
+   "genomic",
+   "snp",
+   "snv",
+   "allele",
+   "haplotype",
+   "brca",
+   "hgvs",
+   "유전",
+   "유전자",
+   "유전형"
+  ],
+  "ambiguous": {
+   "variant": [
+    "gene",
+    "genetic",
+    "brca",
+    "dna",
+    "snv",
+    "mutation",
+    "pathogenic",
+    "hgvs",
+    "clinvar"
+   ],
+   "변이": [
+    "유전",
+    "유전자",
+    "dna"
+   ]
+  }
+ },
+ "BIOMETRIC": {
+  "terms": [
+   "fingerprint",
+   "fngr",
+   "iris",
+   "retina",
+   "faceprint",
+   "voiceprint",
+   "palmprint",
+   "biometric",
+   "지문",
+   "홍채",
+   "안면",
+   "정맥인식",
+   "생체"
+  ],
+  "ambiguous": {
+   "template": [
+    "finger",
+    "fngr",
+    "iris",
+    "face",
+    "voice",
+    "palm",
+    "bio",
+    "biometric",
+    "vein"
+   ],
+   "vein": [
+    "palm",
+    "finger",
+    "biometric",
+    "template"
+   ],
+   "face": [
+    "embedding",
+    "template",
+    "vector",
+    "recognition",
+    "encoding"
+   ]
+  }
+ }
+}

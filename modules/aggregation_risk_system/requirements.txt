@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+tqdm
+scipy
+joblib
+scikit-learn
+# 선택 사항 (미설치 시 자동으로 건너뛰고 경고만 출력)
+xgboost
+lightgbm
+catboost
