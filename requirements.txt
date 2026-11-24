@@ -1,0 +1,22 @@
+Flask>=3.0
+Werkzeug>=3.0
+pandas
+numpy
+openpyxl
+xlrd
+pyarrow
+pdfplumber
+konlpy
+openai
+juliacall
+matplotlib
+seaborn
+python-docx
+tqdm
+scipy
+joblib
+scikit-learn==1.8.0
+# 선택 모델: 설치되지 않으면 집계 모듈이 자동으로 제외합니다.
+xgboost
+lightgbm
+catboost
